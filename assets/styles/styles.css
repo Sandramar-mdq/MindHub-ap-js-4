@@ -1,0 +1,295 @@
+.diagonal-gradient{
+    background: radial-gradient( rgb(126, 32, 96), rgb(42, 25, 51));
+}
+
+  .navbar{
+    background-color: transparent !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.icon-nav{
+    background-color: whitesmoke;
+}
+
+.nav-a{
+    color: rgb(219, 214, 214) !important;
+}
+
+.label-text{
+    color: rgb(219, 214, 214) !important;
+    font-size: 14pt;
+    padding-right: 20px;
+}
+.checks{
+    
+}
+
+.table-text{
+    color: rgb(219, 214, 214) !important;
+    font-size: 12pt;
+}
+
+.p-text{
+    color: rgb(219, 214, 214) !important;
+}
+
+.logo{
+    width: 200px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+.pbarra{
+    background-image: url("../img/back2.jpg");
+    background-size: cover;
+    color: rgb(217, 3, 104);
+    font-family: arial;
+    font-size: 35pt;
+    font-weight: bolder;
+    padding: 20px;
+    text-align: center;
+}
+
+.chev{
+    color: rgb(217, 3, 104);
+    font-size: 30pt;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.categories{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.categ-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.c-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1.5rem;
+    padding: 10em;
+}
+
+.c-div{
+    background-color: rgb(178, 175, 179);
+    display: flex;
+    flex-direction: column;
+}
+
+.c-title{
+    color: black;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.c-body{
+    color: black;
+    background-color: rgb(178, 175, 179);
+    text-align: justify;
+}
+
+.c-main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cnf-main{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-img{
+    height: 300px;
+    object-fit: cover;
+    background-size: cover;
+    border-radius:5px;
+}
+
+
+.c-btn{
+    padding: 10px;
+    border: none;
+    background-color: rgb(217, 3, 104);
+    color: rgb(219, 214, 214);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.d-btn{
+    padding: 10px;
+    border: none;
+    background-color: rgb(217, 3, 104);
+    color: rgb(219, 214, 214);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+    
+.c-btn:hover{
+    background-color: rgb(232, 120, 172);
+    color: rgb(137, 76, 118);
+    transform: translateY(-5px);
+}
+
+.bg-table{
+    background-color: rgb(232, 120, 172);
+    color: rgb(70, 4, 49);
+}
+
+footer{
+    clear: both;
+    font-weight: bold;
+    background-color: rgb(12, 12, 12);
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 24pt;
+}
+
+.textfoot{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* RESPONSIVE */
+@media only screen and (min-width: 481px) and (max-width: 992px) {
+    .logo{
+        width: 150px;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+    }
+
+    .pbarra{
+        background-image: url("../img/back2.jpg");
+        background-size: cover;
+        color: rgb(217, 3, 104);
+        font-family: arial;
+        font-size: 25pt;
+        font-weight: bolder;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .categ-container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .label-text{
+        font-size: 12pt;
+        padding: 10px;
+    }
+
+    .c-btn{
+        padding: 3px;
+        border: none;
+        background-color: rgb(217, 3, 104);
+        color: rgb(219, 214, 214);
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: small;
+    }
+
+    .c-div{
+        background-color: rgb(178, 175, 179);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .table-text{
+        color: rgb(219, 214, 214) !important;
+        font-size: 10pt;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo{
+        width: 120px;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+    }
+
+    .pbarra{
+        background-image: url("../img/back2.jpg");
+        background-size: cover;
+        color: rgb(217, 3, 104);
+        font-family: arial;
+        font-size: 20pt;
+        font-weight: bolder;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .categ-container{
+        display: flex;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    .label-text{
+        font-size: 10pt;
+        padding: 10px;
+    }
+
+    .c-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 10em;
+        font-size: small;
+    }
+
+    .c-img{
+        height: 80%;
+        background-size: cover;
+        border-radius:5px;
+    }
+     
+    .c-btn{
+        padding: 1%;
+        border: none;
+        background-color: rgb(217, 3, 104);
+        color: rgb(219, 214, 214);
+        text-decoration: none;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 9pt;
+    }
+
+    .table-text{
+        color: rgb(219, 214, 214) !important;
+        font-size: 9pt;
+    }
+}
+        
+
