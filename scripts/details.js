@@ -1,8 +1,22 @@
-let datos = data.events;
+async function fetchApi(){
+  try{
+    let urlApi = 'https://mh-h0bh.onrender.com/api/amazing-events'
+    let fetchResponse = await fetch(urlApi)
+    let response = await fetchResponse.json()
+    /* console.log(response) */
+    let datos = response.events;
+   
+    printDetail(datos)
+//    printDetail(`#cards-container` , id_query, datos)
+  } catch(error){
+      //console.log('ocurrio un error')
+      console.log(error)
+  }
+
 let query = location.search
 console.log(query)
 let params = new URLSearchParams(query)
-let id_query = params.get(`_id`) 
+let id_query = params.get(`id`) 
 
 function defineDetail(dato){ 
     return`
@@ -23,30 +37,14 @@ function defineDetail(dato){
         </div>
     `
 }
-
-/* function notFound (){
-  return `
-  <div class="card mb-3 c-div" style="max-width: 540px;">
-          <div class="row g-0 card-body">
-            <div class="col-md-4">
-              <img src="./assets/img/notfound.png" class="img-fluid rounded-start" alt="Details">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="c-title">We're sorry!</h5>
-                <p class="c-body">It seems your search has been unsuccessful.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-  `
-} */
-
-function printDetail(id, dato, array_data){
+function printDetail(_id, dato, array_data){
   let container = document.querySelector(id)
-  let dat = array_data.find(each => each._id == dato)
+  let dat = array_data.find(each => each.id == dato)
   let details = defineDetail(dat)
   container.innerHTML = details
 }
 
-printDetail(`#cards-container` , id_query, datos)
+
+ }
+
+ fetchApi()
