@@ -2,7 +2,7 @@ let data;
 
 async function fetchApi(){
   try{
-    let urlApi = 'https://mh-h0bh.onrender.com/api/amazing-events'
+    let urlApi = 'https://mh.up.railway.app/api/amazing-events'
     let fetchResponse = await fetch(urlApi)
     /* console.log(fetchResponse) */
     let response = await fetchResponse.json()

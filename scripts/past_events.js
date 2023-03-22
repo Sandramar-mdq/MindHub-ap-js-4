@@ -1,7 +1,7 @@
 
 async function fetchApi(){
   try{
-    let urlApi = 'https://mh-h0bh.onrender.com/api/amazing-events?time=past'
+    let urlApi = 'https://mh.up.railway.app/api/amazing-events?time=past'
     let fetchResponse = await fetch(urlApi)
 /*     console.log(fetchResponse)
  */    let response = await fetchResponse.json()
